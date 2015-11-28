@@ -1,0 +1,63 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- meta data - describes the content of the page-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0> <!--opitimized for mobile-->
+    <title>JS Intro</title>
+    
+    <!-- Creating a popup (New Window)-->
+    <script language="JavaScript">
+        function eAdd(){
+            var msgwindow = window.open("popup.html", "PopUp", "toolbar=no, width=500, height=300");
+            }   
+    </script>
+
+</head>
+
+<body>
+    
+    <a href="#" onclick="eAdd()">Link</a>
+    
+<!--
+        Js Alert popup screen
+    <script>
+    alert("hello")
+    </script>
+-->
+    
+<!--    ----------------------------------------------------------->
+<!--    window.smthn = affects the browser itself-->
+<!--
+        Screen Heights
+     <script>
+    alert(window.innerHeight) // remaining Screen Height
+    alert(window.screen.height)      //Screen Height   
+
+    </script>
+-->
+    
+<!--
+    Confirmation text box (With 'Confirm' and 'Cancel' options)
+    <script>
+    window.confirm("hello")
+    </script>
+-->
+ 
+<!--    ----------------------------------------------------------->
+<!--    document.something = works on the CONTENT of the page***-->
+    
+    <!--    prints screen size in window-->
+    <script>document.write(window.screen.height)</script>
+    
+    <!--    Checks Language-->
+    <script>document.write(window.navigator.language)</script>
+    
+    <!--    Writing something-->
+    <script>document.write("<p> Hello!!!! </p>")</script>
+
+</body>
+</html>
